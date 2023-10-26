@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NITROGEN</title>
+  <style>
+    /* ... (your existing CSS styles) ... */
+    body{
+        background: linear-gradient(to right,#CCEEBC, #E9B384);
+    }
+    table,tr,th,td {
+        border:5px  solid black;
+      border-collapse: collapse;
+      width: 50%;
+    }
+
+    th, td {
+      border: 2px solid #ddd;
+      padding: auto;
+     
+      
+    }
+      
+    img {
+      max-width: 100px;
+      max-height: 100px;
+      cursor: pointer;
+    }
+
+    .larger-image {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .larger-image img {
+      max-width: 80%;
+      max-height: 80%;
+    }
+  </style>
+  <script>
+    function showLargerImage(imageUrl) {
+      document.getElementById('largerImage').style.display = 'flex';
+      document.getElementById('largerImageImg').src = imageUrl;
+    }
+
+    function hideLargerImage() {
+      document.getElementById('largerImage').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <h1 align="center">Nitrogen</h1>
+  
+  <table align="center">
+      <h2 align="center" >LOW LEVEL</h2>
+    <tr>
+        <td>Root vegatables</td>
+      <td><img src="https://media.healthyfood.com/wp-content/uploads/2016/09/In-season-Aug-Radishes-Thinkstock_154289238-500x419.jpg" alt="Image 1" onclick="showLargerImage('https://media.healthyfood.com/wp-content/uploads/2016/09/In-season-Aug-Radishes-Thinkstock_154289238-500x419.jpg')">Radishes</td>
+      <td><img src="https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/sites/default/files/20180929_BLP506.jpg" alt="Image 2" onclick="showLargerImage('https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/sites/default/files/20180929_BLP506.jpg')">carrot</td>
+      <td><img src="https://images-prod.healthline.com/hlcmsresource/images/AN_images/AN172-Beets-1296x728-Header.jpg" alt="Image 3" onclick="showLargerImage('https://images-prod.healthline.com/hlcmsresource/images/AN_images/AN172-Beets-1296x728-Header.jpg')">beet</td>
+      
+    </tr>
+    <tr>
+     
+    </tr>
+   
+  </table>
+  <table align="center">
+    <tr>
+        <td>Legumes</td>
+      <td><img src="https://m.media-amazon.com/images/I/61hXEPGt2OL.jpg" alt="Image 1" onclick="showLargerImage('https://m.media-amazon.com/images/I/61hXEPGt2OL.jpg')">Peas</td>
+      <td><img src="https://www.permaculturenews.org/wp-content/uploads/2017/01/A-Happy-Garden-feat.jpg" alt="Image 2" onclick="showLargerImage('https://www.permaculturenews.org/wp-content/uploads/2017/01/A-Happy-Garden-feat.jpg')">Lentils</td>
+      <td><img src="https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2022/04/chickpeas_closeup_1296x728_header-1024x575.jpg?w=1155&h=1528" alt="Image 3" onclick="showLargerImage('https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2022/04/chickpeas_closeup_1296x728_header-1024x575.jpg?w=1155&h=1528')">Chickpeas</td>
+      
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <table align="center">
+    <tr>
+        <td>Leafy Greens</td>
+      <td><img src="https://m.media-amazon.com/images/I/51T3025eGcL._AC_UF1000,1000_QL80_.jpg" alt="Image 1" onclick="showLargerImage('https://m.media-amazon.com/images/I/51T3025eGcL._AC_UF1000,1000_QL80_.jpg')">spinach</td>
+      <td><img src="https://smartyield.in/wp-content/uploads/2021/06/Lettuce-romaine-green-.png" alt="Image 2" onclick="showLargerImage('https://smartyield.in/wp-content/uploads/2021/06/Lettuce-romaine-green-.png')">Lettuce</td>
+      <td><img src="https://samsgardenstore.com/wp-content/uploads/2023/04/organic-swiss-chard-rainbow-500-grams.jpg" alt="Image 3" onclick="showLargerImage('https://samsgardenstore.com/wp-content/uploads/2023/04/organic-swiss-chard-rainbow-500-grams.jpg')">Swiss Chard</td>
+      
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <table align="center">
+    <tr>
+        <td>Herbs</td>
+      <td><img src="https://www.greendna.in/cdn/shop/products/parsley_768x.jpg?v=1582188747" alt="Image 1" onclick="showLargerImage('https://www.greendna.in/cdn/shop/products/parsley_768x.jpg?v=1582188747')">Parsley</td>
+      <td><img src="https://hips.hearstapps.com/hmg-prod/images/cilantro-growing-in-brown-pot-royalty-free-image-1590004344.jpg" alt="Image 2" onclick="showLargerImage('https://hips.hearstapps.com/hmg-prod/images/cilantro-growing-in-brown-pot-royalty-free-image-1590004344.jpg')">Cilantro</td>
+      <td><img src="https://www.thespruce.com/thmb/b7N4dfqrsZ-be1QpCkVQNIwrS3s=/3300x0/filters:no_upscale():max_bytes(150000):strip_icc()/herb-profile-oregano-1761786-5-5c01c4fc1b4d4d748680c261c760497e.jpg" alt="Image 3" onclick="showLargerImage('https://www.thespruce.com/thmb/b7N4dfqrsZ-be1QpCkVQNIwrS3s=/3300x0/filters:no_upscale():max_bytes(150000):strip_icc()/herb-profile-oregano-1761786-5-5c01c4fc1b4d4d748680c261c760497e.jpg')">Oregano</td>
+    
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <!---medium level-->
+  <table align="center">
+      <h2 align="center">MEDIUM LEVEL</h2>
+    <tr>
+        <td>Brassicas</td>
+      <td><img src="https://d3awvtnmmsvyot.cloudfront.net/api/file/GGosbWO9SYyGxvDaciZf/convert?fit=max&w=570&cache=true" alt="Image 1" onclick="showLargerImage('https://d3awvtnmmsvyot.cloudfront.net/api/file/GGosbWO9SYyGxvDaciZf/convert?fit=max&w=570&cache=true')">Cabbage</td>
+      <td><img src="https://m.media-amazon.com/images/I/410ifk4yIrL._AC_UF1000,1000_QL80_.jpg" alt="Image 2" onclick="showLargerImage('https://m.media-amazon.com/images/I/410ifk4yIrL._AC_UF1000,1000_QL80_.jpg')">Cauliflower</td>
+      <td><img src="https://images.squarespace-cdn.com/content/v1/5d96d524052c897425394aaf/1664396116397-16EWA8TDK174W4ZCJH6S/brussels-sprouts-on-stalk.jpg?format=1500w" alt="Image 3" onclick="showLargerImage('https://images.squarespace-cdn.com/content/v1/5d96d524052c897425394aaf/1664396116397-16EWA8TDK174W4ZCJH6S/brussels-sprouts-on-stalk.jpg?format=1500w')">Brussels Sprouts</td>
+      
+    </tr>
+    <tr>
+     
+    </tr>
+   
+  </table>
+  <table align="center">
+    <tr>
+        <td>Alliums:</td>
+      <td><img src="https://www.chfmart.com/images/detailed/3/Onions_Red_Hero.jpg" alt="Image 1" onclick="showLargerImage('https://www.chfmart.com/images/detailed/3/Onions_Red_Hero.jpg')">Onions</td>
+      <td><img src="https://cdn-jdgil.nitrocdn.com/zHpQkxMUZpgOaCxsHmmYHPUOgFHgLdJA/assets/images/optimized/rev-3619abc/www.eatrightbasket.com/wp-content/uploads/2019/02/SS_Veg_19.jpg" alt="Image 2" onclick="showLargerImage('https://cdn-jdgil.nitrocdn.com/zHpQkxMUZpgOaCxsHmmYHPUOgFHgLdJA/assets/images/optimized/rev-3619abc/www.eatrightbasket.com/wp-content/uploads/2019/02/SS_Veg_19.jpg')">Garlic</td>
+      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL3DlyCdlS4XVz5vKZ-mPhrLj7uEGqBufAWSc6FpShac8JkZo7HAjFO6dc6fzxCNxByMI&usqp=CAU" alt="Image 3" onclick="showLargerImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL3DlyCdlS4XVz5vKZ-mPhrLj7uEGqBufAWSc6FpShac8JkZo7HAjFO6dc6fzxCNxByMI&usqp=CAU')">Leeks</td>
+      
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <table align="center">
+    <tr>
+        <td>Fruits:</td>
+      <td><img src="https://clv.h-cdn.co/assets/15/22/2560x1728/gallery-1432664914-strawberry-facts1.jpg" alt="Image 1" onclick="showLargerImage('https://clv.h-cdn.co/assets/15/22/2560x1728/gallery-1432664914-strawberry-facts1.jpg')">Strawberries</td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/1200px-Tomato_je.jpg" alt="Image 2" onclick="showLargerImage('https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/1200px-Tomato_je.jpg')">Tomatoes </td>
+      <td><img src="https://domf5oio6qrcr.cloudfront.net/medialibrary/5193/h0718g1620725736012.jpg" alt="Image 3" onclick="showLargerImage('https://domf5oio6qrcr.cloudfront.net/medialibrary/5193/h0718g1620725736012.jpg')">Peppers </td>
+      
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <table align="center">
+    <tr>
+        <td>Cereals:</td>
+      <td><img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/295/295268/barley-grains-in-a-wooden-bowl.jpg" alt="Image 1" onclick="showLargerImage('https://cdn-prod.medicalnewstoday.com/content/images/articles/295/295268/barley-grains-in-a-wooden-bowl.jpg')">Barley</td>
+      <td><img src="https://5.imimg.com/data5/ST/QW/MY-38700875/fresh-wheat-crop.jpg" alt="Image 2" onclick="showLargerImage('https://5.imimg.com/data5/ST/QW/MY-38700875/fresh-wheat-crop.jpg')">Wheat</td>
+      <td><img src="image3.jpg" alt="Image 3" onclick="showLargerImage('image3.jpg')"></td>
+    
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <table align="center">
+      <h2 align="center">HIGH LEVEL</h2>
+    <tr>
+        <td >Cereals:</td>
+      <td><img src="https://m.media-amazon.com/images/I/41F62-VbHSL._AC_UF1000,1000_QL80_.jpg" alt="Image 1" onclick="showLargerImage('https://m.media-amazon.com/images/I/41F62-VbHSL._AC_UF1000,1000_QL80_.jpg')">Corn</td>
+      <td><img src="https://m.media-amazon.com/images/I/41RLYdZ6L4L._AC_UF1000,1000_QL80_.jpg" alt="Image 2" onclick="showLargerImage('https://m.media-amazon.com/images/I/41RLYdZ6L4L._AC_UF1000,1000_QL80_.jpg')">Rice</td>
+      
+      
+    </tr>
+    <tr>
+     
+    </tr>
+   
+  </table>
+  <table align="center">
+    <tr>
+        <td >Leafy Greens:</td>
+      <td><img src="https://www.bigbasket.com/media/uploads/p/l/40198827_1-fresho-kale-hydroponically-grown.jpg" alt="Image 1" onclick="showLargerImage('https://www.bigbasket.com/media/uploads/p/l/40198827_1-fresho-kale-hydroponically-grown.jpg')">Kale</td>
+      <td><img src="https://res.cloudinary.com/hksqkdlah/image/upload/c_fill,dpr_2.0,f_auto,fl_lossy.progressive.strip_profile,g_faces:auto,h_0.99,q_auto:low,w_0.99/v1/CIO%20Web%20Articles/CIO%20Articles%202022/HTCs/SIL_Bok_Choy" alt="Image 2" onclick="showLargerImage('https://res.cloudinary.com/hksqkdlah/image/upload/c_fill,dpr_2.0,f_auto,fl_lossy.progressive.strip_profile,g_faces:auto,h_0.99,q_auto:low,w_0.99/v1/CIO%20Web%20Articles/CIO%20Articles%202022/HTCs/SIL_Bok_Choy')">Bok Choy.</td>
+      
+      
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <table align="center">
+    <tr>
+        <td >Root Vegetables:</td>
+      <td><img src="https://www.jiomart.com/images/product/original/590003516/potato-per-kg-product-images-o590003516-p590003516-0-202203170642.jpg?im=Resize=(420,420)" alt="Image 1" onclick="showLargerImage('https://www.jiomart.com/images/product/original/590003516/potato-per-kg-product-images-o590003516-p590003516-0-202203170642.jpg?im=Resize=(420,420)')">Potatoes
+</td>
+      
+      
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <table align="center">
+    <tr>
+        <td align="center">Legumes:</td>
+      <td><img src="https://static.toiimg.com/thumb/msid-71233243,width-1070,height-580,imgsize-562395,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="Image 1" onclick="showLargerImage('https://static.toiimg.com/thumb/msid-71233243,width-1070,height-580,imgsize-562395,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg')">Beans</td>
+      
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <div class="larger-image" id="largerImage" onclick="hideLargerImage()">
+    <img id="largerImageImg" src="" alt="Larger Image">
+  </div>
+</body>
+</html>

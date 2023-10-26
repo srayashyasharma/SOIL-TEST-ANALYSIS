@@ -1,0 +1,188 @@
+* {
+margin: 0;
+padding: 0;
+font-family:'Poppins',sans-serif;
+}
+ .header {
+min-height: 100vh;
+width: 100%;
+background-image: url(images/back.png);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+.navbar h1{
+    color:white;
+    font-size:20px;
+}
+nav{
+display: flex;
+padding: 2% 4%;
+justify-content: space-between;
+align-items: center;
+background-color:black;
+font-size:16px;
+height:25px;
+}
+
+nav img{
+width: 150px;
+}
+ .nav-links{
+ flex: 1;
+text-align:right;
+
+}
+ .nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+}
+.nav-links ul li a
+{
+    color:#fff;
+    text-decoration:none;
+    font-size: 19px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#90EE90;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+/*for main app heading and link buttons*/
+.text-box{
+    width:90%;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+.text-box h1{
+    font-size:64px;
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size:24px;
+    color:#fff;
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration: none;
+    color:#fff;
+    border:1px solid #fff;
+    padding:12px 34px;
+    font-size:13px;
+    background-transparent;
+    position:relative;
+    cursor:pointer;
+}
+.hero-btn:hover{
+    border:1px solid  #90EE90;
+    background:#006400;
+    transition:1s;
+}
+/*close and menu icon for smaller screen*/
+/*image*/
+
+nav . fa{
+    display: none;
+}
+/*---end of home page-----*/
+/*----------about page -----------*/
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+.head{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(images/img1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.section{
+    width:100%;
+    min-height:100vh;
+   
+    
+}
+.container{
+    width:80%;
+    display:block;
+    margin:auto;
+    padding-top:100px;
+}
+.content-section{
+    float:left;
+    width:55%
+}
+.image-section{
+    float:right;
+    width:40%;
+}
+.image-section img{
+    width:100%;
+    height:auto;
+    margin-top:100px;
+    
+}
+
+.content-section .title{
+    text-transform:uppercase;
+    font-size:28px;
+}
+.content-section .content h3{
+    margin-top:20px;
+    color:#5d5d5d;
+}
+.content-section .content p{
+    margin-top:10px;
+    font-family:sans-serif;
+    font-size:18px;
+    line-height:1.5;
+}
+.content-section .content .button
+{
+    margin-top:30px;s
+}
+.content-section .content .button a{
+    background-color:#000000;
+    padding :12px 40px;
+    text-decoration:none;
+    color:#fff;
+    font-size:25px;
+    letter-spacing:1.5px;
+    border-radius:15px;
+}
+.content-section .content .button a:hover{
+    background-color:#62CDFF;
+    color:#fff;
+}
+.content-section .social{
+    margin-top: 40px;
+}
+.content-section .social i{
+    color:#FFB4B4;
+    font-size:40px;
+    padding: 0px 10px;
+}
+.content-section .social i:hover{
+    color:#006400;
+}
+

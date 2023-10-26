@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ph</title>
+  <style>
+    /* ... (your existing CSS styles) ... */
+    body{
+        background: linear-gradient(to right,#CCEEBC, #E9B384);
+    }
+    table,tr,th,td {
+        border:5px  solid black;
+      border-collapse: collapse;
+      width: 50%;
+    }
+
+    th, td {
+      border: 2px solid #ddd;
+      padding: auto;
+     
+      
+    }
+      
+    img {
+      max-width: 100px;
+      max-height: 100px;
+      cursor: pointer;
+    }
+
+    .larger-image {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .larger-image img {
+      max-width: 80%;
+      max-height: 80%;
+    }
+  </style>
+  <script>
+    function showLargerImage(imageUrl) {
+      document.getElementById('largerImage').style.display = 'flex';
+      document.getElementById('largerImageImg').src = imageUrl;
+    }
+
+    function hideLargerImage() {
+      document.getElementById('largerImage').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <h1 align="center">PH value</h1>
+  
+  <table align="center">
+      <h2 align="center" >LOW LEVEL</h2>
+    <tr>
+        
+      <td><img src="https://cdn.britannica.com/41/93441-050-F58F8EF1/Gardeners-rhododendrons-flowers.jpg" alt="Image 1" onclick="showLargerImage('https://cdn.britannica.com/41/93441-050-F58F8EF1/Gardeners-rhododendrons-flowers.jpg')">Rhododendrons and Azaleas: </td>
+      <td><img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/280/280579/potatoes-can-be-healthful.jpg" alt="Image 2" onclick="showLargerImage('https://cdn-prod.medicalnewstoday.com/content/images/articles/280/280579/potatoes-can-be-healthful.jpg')">Potatoes:</td>
+      <td><img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/cranberries-101-1296x728-feature.jpg?w=1155&h=1528" alt="Image 3" onclick="showLargerImage('https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/cranberries-101-1296x728-feature.jpg?w=1155&h=1528')">cranberries</td>
+      
+    </tr>
+    <tr>
+     
+    </tr>
+   
+  </table>
+  <table align="center">
+    <tr>
+              <td><img src="https://images-prod.healthline.com/hlcmsresource/images/AN_images/blueberries-1296x728-feature.jpg" alt="Image 1" onclick="showLargerImage('https://images-prod.healthline.com/hlcmsresource/images/AN_images/blueberries-1296x728-feature.jpg')">Blueberries</td>
+      <td><img src="https://s3g2u3k4.rocketcdn.me/wp-content/uploads/sites/4/2018/01/pine-health-benefits.jpg" alt="Image 2" onclick="showLargerImage('https://s3g2u3k4.rocketcdn.me/wp-content/uploads/sites/4/2018/01/pine-health-benefits.jpg')">PineTrees </td>
+      <td><img src="https://www.bigbasket.com/media/uploads/p/l/40099665_2-fresho-strawberry-premium-institutional.jpg" alt="Image 3" onclick="showLargerImage('https://www.bigbasket.com/media/uploads/p/l/40099665_2-fresho-strawberry-premium-institutional.jpg')">strawberries</td>
+      
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  
+  <table align="center">
+      <h2 align="center">MEDIUM LEVEL</h2>
+    <tr>
+       
+      <td><img src="https://d3awvtnmmsvyot.cloudfront.net/api/file/GGosbWO9SYyGxvDaciZf/convert?fit=max&w=570&cache=true" alt="Image 1" onclick="showLargerImage('https://d3awvtnmmsvyot.cloudfront.net/api/file/GGosbWO9SYyGxvDaciZf/convert?fit=max&w=570&cache=true')">Cabbage</td>
+      <td><img src="https://post.healthline.com/wp-content/uploads/2020/09/AN313-Tomatoes-732x549-Thumb.jpg" alt="Image 2" onclick="showLargerImage('https://post.healthline.com/wp-content/uploads/2020/09/AN313-Tomatoes-732x549-Thumb.jpg')">tomatoes</td>
+      <td><img src="https://www.jessicagavin.com/wp-content/uploads/2019/02/carrots-benefits-pin.jpg" alt="Image 3" onclick="showLargerImage('https://www.jessicagavin.com/wp-content/uploads/2019/02/carrots-benefits-pin.jpg')">Carrot</td>
+      
+    </tr>
+    <tr>
+     
+    </tr>
+   
+  </table>
+  <table align="center">
+    <tr>
+      <td><img src="https://trikaya.net/cdn/shop/products/LettuceLeafytabletop_grande.jpg?v=1594756664" alt="Image 1" onclick="showLargerImage('https://trikaya.net/cdn/shop/products/LettuceLeafytabletop_grande.jpg?v=1594756664')">Lettuce</td>
+      <td><img src="https://post.healthline.com/wp-content/uploads/2020/08/766x415_THUMBNAIL_Green_Beans_Nutrition_Facts_and_Health_Benefits.jpg" alt="Image 2" onclick="showLargerImage('https://post.healthline.com/wp-content/uploads/2020/08/766x415_THUMBNAIL_Green_Beans_Nutrition_Facts_and_Health_Benefits.jpg')">Beans:</td>
+      <td><img src="https://www.finedininglovers.com/sites/g/files/xknfdk626/files/2022-06/Type%20of%20cucumber.jpg" alt="Image 3" onclick="showLargerImage('https://www.finedininglovers.com/sites/g/files/xknfdk626/files/2022-06/Type%20of%20cucumber.jpg')">Cucumbers</td>
+      
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <table align="center">
+    <tr>
+      <td><img src="https://www.georgeperry.co.uk/images/P/butternutsquash.jpg" alt="Image 1" onclick="showLargerImage('https://www.georgeperry.co.uk/images/P/butternutsquash.jpg')">squash</td>
+      <td><img src="https://specialtyproduce.com/sppics/1241.png" alt="Image 2" onclick="showLargerImage('https://specialtyproduce.com/sppics/1241.png')">Radishes </td>
+      <td><img src="https://domf5oio6qrcr.cloudfront.net/medialibrary/5193/h0718g1620725736012.jpg" alt="Image 3" onclick="showLargerImage('https://domf5oio6qrcr.cloudfront.net/medialibrary/5193/h0718g1620725736012.jpg')">Peppers </td>
+      
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <table align="center">
+    <tr>
+        
+      <td><img src="https://www.almanac.com/sites/default/files/styles/or/public/image_nodes/cabbage_st-design_gettyimages.jpg?itok=MuUjye9d" alt="Image 1" onclick="showLargerImage('https://www.almanac.com/sites/default/files/styles/or/public/image_nodes/cabbage_st-design_gettyimages.jpg?itok=MuUjye9d')">Cabbage</td>
+      <td><img src="https://gabbarfarms.com/cdn/shop/products/Flat-Leaves-Parsley_600x.jpg?v=1634637013" alt="Image 2" onclick="showLargerImage('https://gabbarfarms.com/cdn/shop/products/Flat-Leaves-Parsley_600x.jpg?v=1634637013')"> parsley,</td>
+      <td><img src="https://farzana.ae/images/thumbs/0005449_basil-leaves.jpeg" alt="Image 3" onclick="showLargerImage('https://farzana.ae/images/thumbs/0005449_basil-leaves.jpeg')">basil</td>
+    
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <table align="center">
+      <h2 align="center">HIGH LEVEL</h2>
+    <tr>
+        
+      <td><img src="https://foolproofliving.com/wp-content/uploads/2022/02/how-to-store-fresh-asparagus.jpg" alt="Image 1" onclick="showLargerImage('https://foolproofliving.com/wp-content/uploads/2022/02/how-to-store-fresh-asparagus.jpg')">Asparagus</td>
+      <td><img src="https://www.eatrightbasket.com/wp-content/uploads/2020/03/locally-sourced-cabbage-red_687682_1554274230_1.jpg" alt="Image 2" onclick="showLargerImage('https://www.eatrightbasket.com/wp-content/uploads/2020/03/locally-sourced-cabbage-red_687682_1554274230_1.jpg')">cabbage</td>
+      <td><img src="https://img.taste.com.au/DBCUD8iO/taste/2007/05/cauliflower-181864-2.jpg" alt="Image 1" onclick="showLargerImage('https://img.taste.com.au/DBCUD8iO/taste/2007/05/cauliflower-181864-2.jpg')">Cauliflower</td>
+      
+      
+    </tr>
+    <tr>
+     
+    </tr>
+   
+  </table>
+  <table align="center">
+    <tr>
+        
+      <td><img src="https://domf5oio6qrcr.cloudfront.net/medialibrary/5390/h1218g16207258089583.jpg" alt="Image 1" onclick="showLargerImage('https://domf5oio6qrcr.cloudfront.net/medialibrary/5390/h1218g16207258089583.jpg')">Broccoli</td>
+      <td><img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201511/carrots-story_647_111915085532.jpg?VersionId=5JlV6qdtYdqWNSgVQxqbgb.4kly6dYf8&size=690:388" alt="Image 2" onclick="showLargerImage('https://akm-img-a-in.tosshub.com/indiatoday/images/story/201511/carrots-story_647_111915085532.jpg?VersionId=5JlV6qdtYdqWNSgVQxqbgb.4kly6dYf8&size=690:388')">carrots</td>
+      
+      
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <table align="center">
+    <tr>
+     
+      <td><img src="https://www.foodcraft.hk/cdn/shop/products/RomaineLettuce-1kg_grande.jpg?v=1652755465" alt="Image 1" onclick="showLargerImage('https://www.foodcraft.hk/cdn/shop/products/RomaineLettuce-1kg_grande.jpg?v=1652755465')">Lettuce</td>
+      <td><img src="https://kidseatincolor.com/wp-content/uploads/2021/09/Cantaloupe-1024x709.jpg" alt="Image 1" onclick="showLargerImage('https://kidseatincolor.com/wp-content/uploads/2021/09/Cantaloupe-1024x709.jpg')">cantaloupe</td>
+      
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <table align="center">
+    <tr>
+        
+      <td><img src="https://images2.minutemediacdn.com/image/upload/c_crop,w_3504,h_1971,x_0,y_156/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01g39e6gws2kzt4pen8z.jpg" alt="Image 1" onclick="showLargerImage('https://images2.minutemediacdn.com/image/upload/c_crop,w_3504,h_1971,x_0,y_156/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01g39e6gws2kzt4pen8z.jpg')">Onions</td>
+      <td><img src="https://c.ndtvimg.com/2023-03/0kkvgkg8_tomatoes_625x300_24_March_23.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886" alt="Image 1" onclick="showLargerImage('https://c.ndtvimg.com/2023-03/0kkvgkg8_tomatoes_625x300_24_March_23.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886')">tomatoes</td>
+      
+    </tr>
+    <tr>
+      <!-- ... More rows ... -->
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+  <div class="larger-image" id="largerImage" onclick="hideLargerImage()">
+    <img id="largerImageImg" src="" alt="Larger Image">
+  </div>
+</body>
+</html>
